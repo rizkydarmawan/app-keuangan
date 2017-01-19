@@ -11,6 +11,15 @@ switch(Input::get('page')){
 	case 'detail':
 		include 'detail.php';
 		break;
+	case 'login':
+		include 'login.php';
+		break;
+	case 'tambah':
+		include 'tambah.php';
+		break;
+	case 'transaksi-hari-ini':
+		include 'transaksi_hari_ini.php';
+		break;
 }
 ?>
 

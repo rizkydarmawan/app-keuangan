@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include 'classes/functionTambahan.php';
 
 spl_autoload_register(function($class){
@@ -8,4 +8,5 @@ spl_autoload_register(function($class){
 
 $crud = new Crud();
 $transaksi = new Transaksi();
+$user = new User();
 ?>

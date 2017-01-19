@@ -17,5 +17,16 @@ class Crud
 	{
 		return $this->db->show($table, $field, $value);
 	}
+	public function insert($table, $data = array())
+	{
+		if ($this->db->insert($table, $data)) {
+			return true;
+		} else return false;
+	}
+
+	public function delete($table, $field, $value)
+	{
+		return $this->db->delete($table, $field, $value);
+	}
 }
 ?>
